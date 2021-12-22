@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
 
         findViewById<Button>(R.id.start).setOnClickListener { _ ->
+            //need a valid key (QMVPAMLUZYBFCGF)
             RxPlateRecognition(this).start("QMVPAMLUZYBFCGF")
                 .subscribe {
                     when (it) {
